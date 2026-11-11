@@ -1,0 +1,9 @@
+step,rows
+"2024 filings, abbreviated + full balance sheet",899961
+drop CUIs that appear in both files / twice (ambiguous),899961
+matched to trade register by CUI,898992
+"legal form in ['SA', 'SCA', 'SCS', 'SNC', 'SRL']",895278
+net turnover > 0 (drops dormant shells),684874
+employee count non-negative,684874
+not a pure holding (CAEN 6420),684651
+registration date known,684651
