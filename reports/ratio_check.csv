@@ -1,0 +1,6 @@
+id,licensee,country,band,reported_EUR_m,model_no_ratio_EUR_m,ratio,model_with_ratio_EUR_m,reported / model_with_ratio,reported / model_no_ratio,rev_quality
+IN-004,Siemens Ltd.,IN,5k-10k,1918.0,266.5,0.132,35.2,54.52,7.2,reported
+IN-011,Fastenal Company,US,10k+,7257.2,225.9,3.581,809.0,8.97,32.12,reported
+IN-095,Uline Inc.,US,5k-10k,7168.2,319.0,3.581,1142.4,6.27,22.47,vendor estimate
+IN-044,Transport for London,GB,10k+,10829.9,81.8,2.236,182.8,59.24,132.46,reported
+IN-074,Orion Corporation,FI,1k-5k,1889.5,162.1,2.321,376.3,5.02,11.65,reported
