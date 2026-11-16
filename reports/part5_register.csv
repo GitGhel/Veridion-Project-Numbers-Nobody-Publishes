@@ -1,0 +1,12 @@
+step,companies
+register: unique CUIs,3924395
+filtered: alive + company form (denominator),1294677
+... filed 2024 accounts (headcount + main activity observed),808968
+"... fewer than 1,000 staff",808732
+... no foreign parent,808551
+INSIDE THE LINE: ... not finance / insurance,797783
+share of filtered register,61.6%
+top industry: NACE 47 Retail trade,113792
+top industry: NACE 49 Land transport,63337
+top industry: NACE 46 Wholesale trade,56060
+"(inside the line but zero 2024 turnover: dormant, model would still output a number)",21349

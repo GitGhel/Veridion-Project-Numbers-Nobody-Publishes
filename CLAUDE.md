@@ -21,13 +21,16 @@ which variables/proxies to trust, "would you ship it") to the user, with enough 
 - Filing type is NOT a feature (it's a function of size = leakage, and doesn't exist abroad).
 - Only "portable" features (observable for a company in any country). County reduced to capital-city flag.
 - Blank employee count = 0. Holdings (CAEN 6420) and non-company legal forms excluded.
+- **Evidence ladder** per licensee: 1 reported → 2 headcount band → revenue model → 3 register-only model → 4 cannot estimate.
+- Tier 2 = **lean** LightGBM (band, NACE2/4, age, SA, capital, foreign parent), **80%** ranges per headcount band.
+- Foreign revenue scaled by **output-per-worker ratio vs Romania** (World Bank, nominal). Sample = 22 rows (S column).
 
 ## Next steps
-1. Baselines → OLS on logs → LightGBM, compared by CV on train only. Revenue and employees modelled separately.
-2. Prediction ranges from out-of-fold residual quantiles.
-3. User picks a ~20–25 entity sample covering every trap type (group subsidiaries, brands, ambiguous names,
-   defunct/acquired, shells, public bodies, tiny firms, Romanian firms with known truth for back-testing).
+1. ~~CV ladder~~ (`cv_models.py`), ~~tier 2 model + ranges~~ (`band_model.py`), ~~sample + headcounts~~ (`notes/headcount_lookup.md`).
+2. Productivity ratios (`productivity.py`), then apply the ladder to the 22 sample rows → client file.
+3. Back-test on Romanian rows; final holdout evaluation (only now may `holdout.parquet` be read).
 4. Part 5: count register companies the model can score (alive filter defined in the decision log).
+5. README from the decision log; Part 4 insight (candidate: share of dead licensees).
 
 ## Conventions
 - Raw data is gitignored; `scripts/download_data.sh` recreates it. Small outputs go in `reports/`.
