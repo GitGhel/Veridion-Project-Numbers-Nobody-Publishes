@@ -157,24 +157,7 @@ The weak part of the line: the register records a parent company for under 1% of
 removes only 181 companies, and most multinational subsidiaries pass through it. 21,349 companies inside the line had zero
 turnover in 2024, and the model would still output a number for them. Code: `src/part5_register.py`.
 
-## Debate topics
 
-*(Draft from my notes; edit into your own words.)*
-
-**Where I wouldn't trust an AI tool.** With facts that look like data: a figure, a date, a unit. In this project, a
-headcount pasted with the wrong source link, a revenue figure that was 9 months rather than a year (Fastenal), and a
-number with no unit (PitchBook) all looked fine until checked against the original filing. My rule: every number in the
-client file links to a primary source I opened, and anything an AI tool wrote from memory is marked "verify".
-
-**Knowing the dataset is wrong at scale, with no complete answer key.** Check it against the slices where the truth
-*is* known (a registry that publishes both numbers), and check internal consistency: revenue per head by industry, ranges
-that hold the share they claim. The Romanian back-test is a small version of this: it found the LinkedIn group-page error
-and the trading-subsidiary error without any external answer key.
-
-**Ranges you'd bet on.** Widths come from the model's own out-of-sample errors, per size band, not from intuition. A year
-later, honesty is measurable: of the figures that became public, about 80% should sit inside their 80% ranges. If far
-fewer do (my large-licensee check: 0 of 5), the ranges were not honest for that population, and the fix is to say so and
-withhold, not to keep publishing them.
 
 ## Cut list
 
